@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+	CFLAGS = -O0
+else
+	CFLAGS = -O2
+endif
+
+CFLAGS += -Wall -g
+
+override_dh_auto_clean:
+	rm -f source/shell-fm.d
+	dh_auto_clean
+
+override_dh_auto_install:
+	$(MAKE) PREFIX=/usr DESTDIR=$(CURDIR)/debian/shell-fm MANDIR=/usr/share/man install
+
+%:
+	dh $@ --parallel
+
+override_dh_pysupport override_dh_perl:

@@ -1,0 +1,8 @@
+Scripts
+-------
+
+Shell-fm also distributes some scripts to accomplish small
+tasks such as downloading song lyrics or remote controlling
+the player.
+
+Look at /usr/lib/shell-fm/

@@ -1,0 +1,13 @@
+Index: shell-fm-0.7+git20100414/source/Makefile
+===================================================================
+--- shell-fm-0.7+git20100414.orig/source/Makefile	2010-04-15 09:37:18.000000000 +0200
++++ shell-fm-0.7+git20100414/source/Makefile	2010-04-15 09:37:23.000000000 +0200
+@@ -5,7 +5,7 @@
+ BINARY	:= shell-fm
+ LIB	:= libshellfm.so
+ STATIC	:= libshellfm.a
+-CFLAGS  += -Os -Wall -MD -W -I./include/
++CFLAGS  += -MD -W -I./include/
+ 
+ ifdef EXTERN_ONLY
+ 	CFLAGS += -DEXTERN_ONLY

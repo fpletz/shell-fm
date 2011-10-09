@@ -1,0 +1,56 @@
+This package was debianized by Nacho Barrientos Arias 
+<nacho@debian.org> on Sun,  4 Feb 2007 14:45:34 +0100.
+
+It was downloaded from http://nex.scrapping.cc/shell-fm/
+
+Upstream Author: Jonas Kramer <jkramer@nex.scrapping.cc>
+
+Copyright 2006-2010:
+  * Jonas Kramer
+  * Bart Trojanowski
+  * Jacek Nitkiewicz
+  * Helmut Maierthaler
+  * Nguyen Thai Ngoc Duy
+  * Ondrej Novy
+  * Csaba Henk
+  * Matthias Goebl
+  * Benoît Rouits
+  * Mike Kelly
+  * Christian Neukirchen
+  * Guillaume Pinot
+  * Wirt Wolff
+  * Alexander Monakov
+  * Rodrigo Tartajo
+  * Silviu Grijincu
+  * Mark Goodall
+  * Pierre Baillet
+
+
+License:
+
+  This program is free software; you can redistribute it and/or
+  modify it under the terms of the GNU General Public License
+  as published by the Free Software Foundation; either version 2
+  of the License, or any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+ On Debian GNU/Linux systems, the complete text of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL'
+
+Notes:
+******
+
+Shell-fm includes some pieces of code from Exim to deal with MD5
+hashes (see src/md5.c). This software is released under a GPL
+license.
+
+play.c includes source from minimad.c from Underbit Technologies, 
+Inc., an example file distributed with libmad and licensed under 
+a GPL license, see above.
+
+The Debian packaging is (C) 2007, Nacho Barrientos Arias 
+<nacho@debian.org> and is licensed under the GPL, see above.

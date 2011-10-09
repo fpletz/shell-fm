@@ -1,0 +1,106 @@
+shell-fm (0.8+git20111010-0.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * New Git snapshot.
+  * Bump Dehhelper compatibility level to 8.
+  * debian/control
+    - Bump Standards-Version to 3.9.2.
+    - Add Build-Depends on debhelper (>= 8).
+    - Updated Description.
+  * debian/rules
+    - Simplification.
+    - Added support for parallel build.
+  * Install third-party scripts to /usr/share/shell-fm to comply with section
+    8.2 of the Debian Policy.
+  * Added docs. 
+
+ -- Franz Pletz <fpletz@fnordicwalking.de>  Mon, 10 Oct 2011 01:37:17 +0200
+
+shell-fm (0.7+git20100414-1) unstable; urgency=low
+
+  * New Git snapshot (closes: #510090).
+   - Determine appropriate include using __FreeBSD_kernel__. Fixes
+     FTBFS in GNU/kFreeBSD. Thanks Cyril (closes: #542534)
+   - Decode quotes. Thanks Jakub. (closes: #503734)
+   - Send complete URLs to adjust.php. Thanks Clint (closes: #525840)
+   - Fix remaining song time after recovering shell-fm from the background.
+     Thanks Ignacio (closes: #489449)
+  * debian/manpages
+   - No longer necessary, upstream ships now a manpage. (closes: #550513)
+  * debian/control
+   - Drop deprecated b-ds: autoconf, automake
+   - Add pkg-config as b-d
+   - Bump Standards-Version to 3.8.4
+   - Add warning about subscription fees to package description
+   - Suggest zsh and python
+  * Install third-party scripts to /usr/lib/shell-fm
+  * Switch to dpkg-source 3.0 (quilt) format.
+  * Move to Debhelper compatibility level 7.
+
+ -- Nacho Barrientos Arias <nacho@debian.org>  Wed, 14 Apr 2010 13:36:58 +0200
+
+shell-fm (0.4+svn20071125.r282-1) unstable; urgency=low
+
+  * New SVN snapshot 
+  * debian/control
+   - Homepage field added.
+  * debian/shell-fm.examples
+   - Path fixed.
+
+ -- Nacho Barrientos Arias <nacho@debian.org>  Sun, 25 Nov 2007 18:03:34 +0100
+
+shell-fm (0.3~svn20071004.r262-1) unstable; urgency=low
+
+  * New SVN snapshot
+   + Support for the new Last.FM protocol now in unstable.
+   + Prevents some ugly sigsegvs.
+   + Improved socket interface.
+   + AO support is now working properly.
+
+ -- Nacho Barrientos Arias <nacho@debian.org>  Thu, 04 Oct 2007 14:56:01 +0200
+
+shell-fm (0.3~svn20070725.r249-1) experimental; urgency=low
+
+  * New SVN snapshot
+   + Beta support for the new Last.FM query protocol.
+   + Track skipping is now working (closes: #431642).
+  * debian/control
+   + Dropped no longer needed readline build dependency.
+   + Build-depending on autoconf and automake.
+  * debian/rules
+   + Running reconfig.
+
+ -- Nacho Barrientos Arias <nacho@debian.org>  Wed, 25 Jul 2007 15:07:30 +0200
+
+shell-fm (0.2+svn20070605.r215-1) unstable; urgency=low
+
+  * New SVN snapshot
+   + Added patch to fix a weird behaviour with non-ascii characters (merged 
+     upstream directly) (closes: #427378).
+     Thanks to Eugeniy Meshcheryakov <eugen@debian.org>
+   + Fixed discovery mode.
+   + Code clean up and minor fixes.
+  * debian/{rules,control}
+   + Disabling libao support in non-supported architectures, it renders 
+     shell-fm unusable in those architectures.
+
+ -- Nacho Barrientos Arias <nacho@debian.org>  Tue, 05 Jun 2007 13:01:53 +0200
+
+shell-fm (0.2+svn20070421.r201-1) unstable; urgency=low
+
+  * New SVN snapshot
+   + Minor bugfixes.
+   + Improved radio history.
+   + Added ~/.shell-fm/session in order to be used by 
+     external scripts.
+  * debian/rules
+   + Installing a dummy RC file in examples directory.
+
+ -- Nacho Barrientos Arias <nacho@debian.org>  Sun, 22 Apr 2007 20:40:44 +0200
+
+shell-fm (0.2+svn20070316.r191-1) unstable; urgency=low
+
+  * Initial release (Closes: #409526).
+
+ -- Nacho Barrientos Arias <nacho@debian.org>  Sun,  4 Mar 2007 14:45:34 +0100
+

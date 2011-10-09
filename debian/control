@@ -1,0 +1,22 @@
+Source: shell-fm
+Section: sound
+Priority: extra
+Maintainer: Nacho Barrientos Arias <nacho@debian.org>
+Build-Depends: debhelper (>= 8), libmad0-dev, libao-dev, pkg-config
+Standards-Version: 3.9.2
+Homepage: http://nex.scrapping.cc/shell-fm/
+
+Package: shell-fm
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: zsh, python
+Description: console based player for last.fm radio streams
+ shell-fm is a lightweight, console-based player for Last.FM
+ radio streams. It's pretty small and it has most features the
+ "official" player has, if not even a few more. Additional
+ features include remote control, autoban and bookmarks saving.
+ .
+ You need an account in order to use this player, so please 
+ consider create one for free before using shell-fm at
+ http://last.fm. In some countries subscription fees may apply, 
+ see Last.fm website for additional details.
